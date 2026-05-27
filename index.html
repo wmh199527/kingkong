@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,10 +60,6 @@
             font-weight: 700;
         }
 
-        .logo i {
-            font-size: 2rem;
-        }
-
         nav ul {
             display: flex;
             list-style: none;
@@ -101,7 +98,7 @@
         }
 
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80');
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=2073&q=80');
             background-size: cover;
             background-position: center;
             height: 80vh;
@@ -176,12 +173,6 @@
             border-radius: 2px;
         }
 
-        .section-title p {
-            color: var(--text);
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -248,10 +239,6 @@
             margin-bottom: 0.5rem;
         }
 
-        .stat-item p {
-            color: var(--text);
-        }
-
         .initiatives {
             background-color: var(--white);
         }
@@ -298,10 +285,6 @@
             font-size: 1.5rem;
             margin-bottom: 1rem;
             color: var(--dark);
-        }
-
-        .initiative-content p {
-            margin-bottom: 1.5rem;
         }
 
         .cta {
@@ -364,10 +347,6 @@
             background-color: var(--accent);
         }
 
-        .footer-column p {
-            margin-bottom: 1rem;
-        }
-
         .footer-links {
             list-style: none;
         }
@@ -423,32 +402,14 @@
         }
 
         @media (max-width: 992px) {
-            .about-content {
-                grid-template-columns: 1fr;
-            }
-            
-            .initiatives-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .footer-content {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .stats {
-                grid-template-columns: repeat(2, 1fr);
-            }
+            .about-content { grid-template-columns: 1fr; }
+            .initiatives-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-content { grid-template-columns: repeat(2, 1fr); }
+            .stats { grid-template-columns: repeat(2, 1fr); }
         }
 
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .hero p {
-                font-size: 1.1rem;
-            }
-            
+            .hero h1 { font-size: 2.5rem; }
             nav ul {
                 display: none;
                 position: absolute;
@@ -459,43 +420,18 @@
                 flex-direction: column;
                 padding: 1rem 0;
                 text-align: center;
-                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
             }
-            
-            nav ul.active {
-                display: flex;
-            }
-            
-            nav ul li {
-                margin: 0;
-                padding: 0.8rem 0;
-            }
-            
-            .mobile-menu {
-                display: block;
-            }
-            
-            .initiatives-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .footer-content {
-                grid-template-columns: 1fr;
-            }
-            
-            .stats {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* Animation for stats counter */
-        .counter {
-            transition: all 0.5s ease;
+            nav ul.active { display: flex; }
+            nav ul li { margin: 0; padding: 0.8rem 0; }
+            .mobile-menu { display: block; }
+            .initiatives-grid { grid-template-columns: 1fr; }
+            .footer-content { grid-template-columns: 1fr; }
+            .stats { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
+
     <header>
         <div class="container nav-container">
             <div class="logo">
@@ -517,7 +453,6 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container hero-content">
             <h1>Protect Our Planet, Preserve Our Future</h1>
@@ -526,16 +461,16 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about">
         <div class="container">
             <div class="section-title">
                 <h2>About Green Network</h2>
                 <p>We are a global community dedicated to environmental protection and sustainable development.</p>
             </div>
+            
             <div class="about-content">
                 <div class="about-img">
-                    <img src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Team planting trees">
+                    <img src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?auto=format&fit=crop&w=2070&q=80" alt="Team planting trees">
                 </div>
                 <div class="about-text">
                     <h3>Our Mission</h3>
@@ -545,6 +480,7 @@
                     <a href="#" class="btn">Learn More</a>
                 </div>
             </div>
+
             <div class="stats">
                 <div class="stat-item">
                     <i class="fas fa-tree"></i>
@@ -570,17 +506,17 @@
         </div>
     </section>
 
-    <!-- Initiatives Section -->
     <section class="initiatives" id="initiatives">
         <div class="container">
             <div class="section-title">
                 <h2>Our Initiatives</h2>
                 <p>Discover the key programs and projects we're implementing to protect our planet.</p>
             </div>
+
             <div class="initiatives-grid">
                 <div class="initiative-card">
                     <div class="initiative-img">
-                        <img src="https://dialogue.earth/content/uploads/2021/04/lessons-from-the-rush-to-reforest-china-dialogue-2400x1599.jpg" alt="Reforestation">
+                        <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=2070&q=80" alt="Reforestation">
                     </div>
                     <div class="initiative-content">
                         <h3>Global Reforestation</h3>
@@ -588,9 +524,10 @@
                         <a href="#" class="btn">Learn More</a>
                     </div>
                 </div>
+
                 <div class="initiative-card">
                     <div class="initiative-img">
-                        <img src="https://images.unsplash.com/photo-1621451537084-482c73073a0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Ocean Conservation">
+                        <img src="https://images.unsplash.com/photo-1621451537084-482c73073a0f?auto=format&fit=crop&w=1974&q=80" alt="Ocean Conservation">
                     </div>
                     <div class="initiative-content">
                         <h3>Ocean Conservation</h3>
@@ -598,9 +535,10 @@
                         <a href="#" class="btn">Learn More</a>
                     </div>
                 </div>
+
                 <div class="initiative-card">
                     <div class="initiative-img">
-                        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80" alt="Renewable Energy">
+                        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=2072&q=80" alt="Renewable Energy">
                     </div>
                     <div class="initiative-content">
                         <h3>Renewable Energy</h3>
@@ -612,7 +550,6 @@
         </div>
     </section>
 
-    <!-- CTA Section -->
     <section class="cta" id="get-involved">
         <div class="container">
             <h2>Join Our Global Movement</h2>
@@ -621,7 +558,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer id="contact">
         <div class="container">
             <div class="footer-content">
@@ -663,7 +599,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 Green Network. All rights reserved.</p>
+                <p>&copy; 2026 Green Network. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -677,14 +613,13 @@
         // Counter Animation
         function animateCounters() {
             const counters = document.querySelectorAll('.counter');
-            const speed = 200; // The lower the slower
-            
+            const speed = 200;
+
             counters.forEach(counter => {
                 const target = +counter.getAttribute('data-target');
                 const count = +counter.innerText;
-                
                 const inc = target / speed;
-                
+
                 if(count < target) {
                     counter.innerText = Math.ceil(count + inc);
                     setTimeout(animateCounters, 1);
@@ -694,29 +629,24 @@
             });
         }
 
-        // Initialize counters when page loads
         window.addEventListener('load', animateCounters);
 
-        // Smooth scrolling for navigation links
+        // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
                 const targetId = this.getAttribute('href');
                 if(targetId === '#') return;
-                
                 const targetElement = document.querySelector(targetId);
                 if(targetElement) {
                     window.scrollTo({
                         top: targetElement.offsetTop - 80,
                         behavior: 'smooth'
                     });
-                    
                     document.querySelector('nav ul').classList.remove('active');
                 }
             });
         });
     </script>
 </body>
-
 </html>
